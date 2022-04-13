@@ -1,12 +1,10 @@
 {
-    "compilerOptions": {
-      "module": "ES2015",
-      "lib": ["es6", "dom", "es2017"],
-      "target": "es2015",
-      "noImplicitAny": true,
-      "types": ["jest"],
-    },
-    "include": [
-      "src/**/*"
-    ],
-  }
+  "compilerOptions": {
+    "module": "ES2015",
+    "lib": ["es6", "dom", "es2017"],
+    "target": "es2015",
+    "noImplicitAny": true,
+    "types": ["jest"]
+  },
+  "include": ["src/**/*"]
+}

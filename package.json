@@ -1,37 +1,37 @@
 {
-    "name": "im-ts-aria",
-    "author": "InfoMentor",
-    "version": "1.4.1",
-    "description": "lib to provide required properties based on wai-aria design patterns",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "scripts": {
-        "start": "npm run build:dev -- -w",
-        "generateTypes": "tsc src/index.ts --declaration true --declarationDir dist/types --emitDeclarationOnly true",
-        "build": "npm run build:dev && npm run build:prod",
-        "build:dev": "rollup -c --environment BUILD:dev",
-        "build:prod": "rollup -c --environment BUILD:prod",
-        "test": "jest",
-        "prepublishOnly": "npm run test && npm run generateTypes && npm run build"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.9.6",
-        "@babel/preset-env": "^7.9.6",
-        "@babel/preset-typescript": "^7.9.0",
-        "@rollup/plugin-babel": "^5.0.2",
-        "@rollup/plugin-typescript": "^5.0.1",
-        "@types/jest": "^25.2.3",
-        "@types/ramda": "^0.27.6",
-        "babel-jest": "^26.0.1",
-        "change-case": "^4.1.1",
-        "jest": "^26.0.1",
-        "prettier": "2.6.2",
-        "ramda": "^0.27.0",
-        "rollup": "^2.10.5",
-        "rollup-plugin-uglify": "^6.0.4",
-        "typescript": "^3.9.3"
-    },
-    "peerDependencies": {
-        "ramda": "^0.27.0"
-    }
+  "name": "im-ts-aria",
+  "author": "InfoMentor",
+  "version": "1.4.1",
+  "description": "lib to provide required properties based on wai-aria design patterns",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "npm run build:dev -- -w",
+    "generateTypes": "tsc src/index.ts --declaration true --declarationDir dist/types --emitDeclarationOnly true",
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "rollup -c --environment BUILD:dev",
+    "build:prod": "rollup -c --environment BUILD:prod",
+    "test": "jest",
+    "prepublishOnly": "npm run test && npm run generateTypes && npm run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@rollup/plugin-babel": "^5.0.2",
+    "@rollup/plugin-typescript": "^5.0.1",
+    "@types/jest": "^25.2.3",
+    "@types/ramda": "^0.27.6",
+    "babel-jest": "^26.0.1",
+    "change-case": "^4.1.1",
+    "jest": "^26.0.1",
+    "prettier": "2.6.2",
+    "ramda": "^0.27.0",
+    "rollup": "^2.10.5",
+    "rollup-plugin-uglify": "^6.0.4",
+    "typescript": "^3.9.3"
+  },
+  "peerDependencies": {
+    "ramda": "^0.27.0"
+  }
 }

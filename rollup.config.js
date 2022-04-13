@@ -16,33 +16,33 @@ const banner = `
 const plugins = [
   typescript({
     target: 'es5',
-  })
+  }),
 ];
 
-if(isProd) {
+if (isProd) {
   plugins.push(
-    uglify({ 
+    uglify({
       output: {
-          comments: /@name|@version|@date/i
-      }
-   })
+        comments: /@name|@version|@date/i,
+      },
+    }),
   );
 }
 
 export default {
-    input: 'src/index.ts',
-    output: {
-        banner,
-        name,
-        file: isProd ? 'dist/index.min.js' : 'dist/index.js',
-        format: 'umd',
-        globals: {
-            'ramda': 'R',
-        }
+  input: 'src/index.ts',
+  output: {
+    banner,
+    name,
+    file: isProd ? 'dist/index.min.js' : 'dist/index.js',
+    format: 'umd',
+    globals: {
+      ramda: 'R',
     },
-    external: [
-      ...Object.keys(packageJson.dependencies || {}),
-      ...Object.keys(packageJson.peerDependencies || {}),
-    ],
-    plugins,
+  },
+  external: [
+    ...Object.keys(packageJson.dependencies || {}),
+    ...Object.keys(packageJson.peerDependencies || {}),
+  ],
+  plugins,
 };
