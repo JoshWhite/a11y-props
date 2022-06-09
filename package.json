@@ -1,8 +1,8 @@
 {
-  "name": "im-ts-aria",
-  "author": "InfoMentor",
-  "version": "1.4.1",
-  "description": "lib to provide required properties based on wai-aria design patterns",
+  "name": "a11y-props",
+  "author": "Josh White",
+  "version": "1.0.0-beta",
+  "description": "lib to provide required properties based on a11y and wai-aria design patterns",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
